@@ -12,5 +12,6 @@
 	"license":      "ISC",
 	"engines":      {"node": ">=4"},
 	"dependencies": {
+		"ansi-styles": "^2.2.1"
 	}
 }
