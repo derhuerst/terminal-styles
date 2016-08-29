@@ -29,14 +29,23 @@ const end = Object.freeze({end: true})
 
 const render = (parts, ...markers) => {
 
-	const stack = []
+	const stack = [] // to memorize the last color
 	const escapes = []
 	for (let i = 0; i < markers.length; i++) {
 
 		if (markers[i] === end) {
 			const matching = stack.pop()
-			const outer = stack[stack.length - 1]
-			escapes.push(matching.close + (outer ? outer.open : ''))
+			let lastColor = null
+			for (let i = stack.length - 1; i >= 0; i--) {
+				if (stack[i].isColor) {
+					lastColor = stack[i]
+					break
+				}
+			}
+
+			escapes.push(matching.close +
+				// colors overwrite each other, so we add the old color again
+				(lastColor && lastColor.isColor ? lastColor.open : ''))
 		} else {
 			stack.push(markers[i])
 			escapes.push(markers[i].open)
