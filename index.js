@@ -4,7 +4,28 @@ const ansi = require('ansi-styles')
 
 
 
-const end = Object.freeze({})
+// reset & reverse are problematic because they also affect colors
+const blacklist = ['reset', 'reverse']
+
+// closing tags of colors have a weird behavior, so we need to tag them
+const colors = [
+	'black', 'red', 'green', 'yellow', 'blue', 'magenta', 'cyan', 'white', 'gray',
+	'bgBlack', 'bgRed', 'bgGreen', 'bgYellow', 'bgBlue', 'bgMagenta', 'bgCyan', 'bgWhite', 'bgGray'
+]
+
+const styles = Object.keys(ansi)
+.filter((style) => blacklist.indexOf(style) < 0)
+// todo: consider lodash.omit for this
+.reduce((all, style) => {
+	all[style] = Object.assign({}, ansi[style], {
+		isColor: colors.indexOf(style) >= 0
+	})
+	return all
+}, {})
+
+const end = Object.freeze({end: true})
+
+
 
 const render = (parts, ...markers) => {
 
@@ -33,4 +54,4 @@ const render = (parts, ...markers) => {
 	return out
 }
 
-module.exports = Object.assign(render, ansi, {end})
+module.exports = Object.assign(render, styles, {x: end})
