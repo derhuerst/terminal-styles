@@ -11,6 +11,7 @@ Bundled with [browserify](http://browserify.org/), `terminal-styles` has roughly
 [![dependency status](https://img.shields.io/david/derhuerst/terminal-styles.svg)](https://david-dm.org/derhuerst/terminal-styles)
 [![dev dependency status](https://img.shields.io/david/dev/derhuerst/terminal-styles.svg)](https://david-dm.org/derhuerst/terminal-styles#info=devDependencies)
 ![ISC-licensed](https://img.shields.io/github/license/derhuerst/terminal-styles.svg)
+[![chat on gitter](https://badges.gitter.im/derhuerst.svg)](https://gitter.im/derhuerst)
 
 
 ## Installing
