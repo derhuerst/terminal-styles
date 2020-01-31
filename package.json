@@ -1,15 +1,28 @@
 {
-	"name":         "terminal-styles",
-	"description":  "Terminal styling using ES6 tagged template literals.",
-	"version":      "0.1.0",
-	"main":         "index.js",
-	"files":        ["index.js"],
-	"keywords":     ["ansi", "color", "colors", "console", "cli", "shell", "terminal", "tty", "text", "xterm"],
-	"author":       "Jannis R <mail@jannisr.de>",
-	"homepage":     "https://github.com/derhuerst/terminal-styles",
-	"repository":   "derhuerst/terminal-styles",
-	"bugs":         "https://github.com/derhuerst/terminal-styles/issues",
-	"license":      "ISC",
+	"name": "terminal-styles",
+	"description": "Terminal styling using ES6 tagged template literals.",
+	"version": "1.0.0",
+	"main": "index.js",
+	"files": [
+		"index.js"
+	],
+	"keywords": [
+		"ansi",
+		"color",
+		"colors",
+		"console",
+		"cli",
+		"shell",
+		"terminal",
+		"tty",
+		"text",
+		"xterm"
+	],
+	"author": "Jannis R <mail@jannisr.de>",
+	"homepage": "https://github.com/derhuerst/terminal-styles",
+	"repository": "derhuerst/terminal-styles",
+	"bugs": "https://github.com/derhuerst/terminal-styles/issues",
+	"license": "ISC",
 	"engines": {
 		"node": ">=10"
 	},

@@ -8,10 +8,10 @@ Bundled with [browserify](http://browserify.org/), `terminal-styles` has roughly
 
 [![npm version](https://img.shields.io/npm/v/terminal-styles.svg)](https://www.npmjs.com/package/terminal-styles)
 [![build status](https://img.shields.io/travis/derhuerst/terminal-styles.svg)](https://travis-ci.org/derhuerst/terminal-styles)
-[![dependency status](https://img.shields.io/david/derhuerst/terminal-styles.svg)](https://david-dm.org/derhuerst/terminal-styles)
-[![dev dependency status](https://img.shields.io/david/dev/derhuerst/terminal-styles.svg)](https://david-dm.org/derhuerst/terminal-styles#info=devDependencies)
 ![ISC-licensed](https://img.shields.io/github/license/derhuerst/terminal-styles.svg)
-[![chat on gitter](https://badges.gitter.im/derhuerst.svg)](https://gitter.im/derhuerst)
+![minimum Node.js version](https://img.shields.io/node/v/terminal-styles.svg)
+[![chat with me on Gitter](https://img.shields.io/badge/chat%20with%20me-on%20gitter-512e92.svg)](https://gitter.im/derhuerst)
+[![support me on Patreon](https://img.shields.io/badge/support%20me-on%20patreon-fa7664.svg)](https://patreon.com/derhuerst)
 
 
 ## Installing
