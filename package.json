@@ -17,11 +17,9 @@
 		"ansi-styles": "^4.2.1"
 	},
 	"devDependencies": {
-		"tap-min": "^2.0.0",
-		"tape": "^4.6.3"
 	},
 	"scripts": {
-		"test": "node test.js | tap-min",
+		"test": "node test.js",
 		"prepublish": "npm run test"
 	}
 }
