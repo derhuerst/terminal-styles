@@ -10,13 +10,15 @@
 	"repository":   "derhuerst/terminal-styles",
 	"bugs":         "https://github.com/derhuerst/terminal-styles/issues",
 	"license":      "ISC",
-	"engines":      {"node": ">=4"},
+	"engines": {
+		"node": ">=10"
+	},
 	"dependencies": {
-		"ansi-styles": "^3.0.0"
+		"ansi-styles": "^4.2.1"
 	},
 	"devDependencies": {
-		"tape": "^4.6.3",
-		"tap-min": "^1.2"
+		"tap-min": "^2.0.0",
+		"tape": "^4.6.3"
 	},
 	"scripts": {
 		"test": "node test.js | tap-min",
